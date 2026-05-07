@@ -39,18 +39,36 @@ Step 1: Create and Configure Azure Infrastructure:
 </p>
 <br />
 
+Step 2: Deploy Windows Server Virtual Machines:
+
+IMAGE NOTE: Client-1 is left image, Domain-Controller is right image.
+
 <p>
 <img width="2560" height="1070" alt="image" src="https://github.com/user-attachments/assets/e981d2ae-0c35-4a81-8bfe-e612dc8bffc2" />
 </p>
 <p>
-Once deployed, remote into both the Client-1 Virtual Machine and the Domain-Controller Virtual Machine using Remote Desktop Connection. Use the public IP address given to each respective Virtual Machine to sign in and use the administrator accounts made during the Azure setup to remote into each system. Once signed in to each system, open Powershell in each system to observe and verify network configurations in Azure are correct. On the Client-1 system, type in "ipconfig /all" to observe that the DNS points to the Domain Controller's static IP address, then type in "ping x.x.x.x" (replace x.x.x.x with the static private ip address of your domain controller) and observe that it pings the Domain-Controller's private IP address. IMAGE NOTE: Client-1 is left image, Domain-Controller is right image.
+  
+- Once deployed, remote into both the Client-1 Virtual Machine and the Domain-Controller Virtual Machine using Remote Desktop Connection. Use the public IP address given to each respective Virtual Machine to sign in and use the administrator accounts made during the Azure setup to remote into each system. 
+  
+- Once signed in to each system, open Powershell in each system to observe and verify that the network configurations are correct. On the Client-1 system, type in "ipconfig /all" to observe that the DNS points to the Domain Controller's static IP address, then type in "ping x.x.x.x" (replace x.x.x.x with the static private ip address of your domain controller) and observe that it pings the Domain-Controller's private IP address. 
 </p>
 <br />
+
+Step 3: Install and Configure Active Directory Domain Services:
 
 <p>
 <img width="2103" height="1257" alt="LAB4-ADSERVICE" src="https://github.com/user-attachments/assets/06fa70ff-3b9e-482d-b90c-f2ee2beb52f7" />
 </p>
 <p>
-On the Domain-Controller system, go into Server Manager which should boot up automatically, and click on Manage > Add Roles and Features at the top right corner. At the installation wizard, select next at the "Before You Begin" tab, in the Installation Type tab; select "Role-based or feature-based installation" then click next, in the Server Selection tab; select your specific server (Should just be your own in this exercise) then click next. At the Server Roles tab; select Active Directory Domain Services and install, allowing necessary features to install as well. 
+  
+- On the Domain-Controller system, go into Server Manager which should boot up automatically, and click on Manage > Add Roles and Features at the top right corner. At the installation wizard, select next at the "Before You Begin" tab, in the Installation Type tab; select "Role-based or feature-based installation" then click next, in the Server Selection tab; select your specific server (Should just be your own in this exercise) then click next. At the Server Roles tab; select Active Directory Domain Services and install, allowing necessary features to install as well.
+
+- Once installed, Server Manager should prompt to "Promote as a Domain Controller", select this and at the wizard, select "Add New Forest" and add your desired domain name in the "Root Domain Name" box. Once done, take care to make sure both the functional levels match Windows Server 2025. Note down and set a Directory Services Restore Mode password then select next and move forward to install the configuration. Allow the server to restart. Once complete, verify that the server is set up as a domain controller by going into "Local Server" in Server Manager, and observing that the domain is set, and checking that you have access to "Active Directory Users and Groups", "Active Directory Domains and Trusts", and "Group Policy Management" in the tools bar.
+
 </p>
 <br />
+
+Step 4: Join Client Systems and Configure Policies:
+
+</p> 
+
