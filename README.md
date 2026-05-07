@@ -27,10 +27,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-PLACEHOLDER
+<img width="2560" height="1280" alt="LAB4-DCDEPLOY" src="https://github.com/user-attachments/assets/76bb93ad-ea5e-48da-9013-530e3aa7c930" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Create the Azure environment needed for the domain deployment by setting up a Resource Group, then create two Virtual Machines using Windows Server 2025 images, one named Client-1, and one named Domain-Controller, making sure the Virtual Network and subnets match so the Virtual Machines can communicate internally. Configure the Domain-Controller to have a static IP under network settings so clients can locate it reliably for domain services, then change the DNS settings of Client-1 to point to the Domain Controller's static IP address so they can properly resolve and communicate with the domain. 
 </p>
 <br />
 
