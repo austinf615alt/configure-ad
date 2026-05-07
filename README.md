@@ -43,9 +43,9 @@ Once deployed, remote into both the Client-1 Virtual Machine and the Domain-Cont
 <br />
 
 <p>
-PLACEHOLDER
+<img width="2103" height="1257" alt="LAB4-ADSERVICE" src="https://github.com/user-attachments/assets/06fa70ff-3b9e-482d-b90c-f2ee2beb52f7" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+On the Domain-Controller system, go into Server Manager which should boot up automatically, and click on Manage > Add Roles and Features at the top right corner. At the installation wizard, select next at the "Before You Begin" tab, in the Installation Type tab; select "Role-based or feature-based installation" then click next, in the Server Selection tab; select your specific server (Should just be your own in this exercise) then click next. At the Server Roles tab; select Active Directory Domain Services and install, allowing necessary features to install as well. 
 </p>
 <br />
