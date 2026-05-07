@@ -35,10 +35,10 @@ Create the Azure environment needed for the domain deployment by setting up a Re
 <br />
 
 <p>
-<img width="2560" height="1070" alt="image" src="https://github.com/user-attachments/assets/df2c17df-218c-4f4b-9983-2d68db9b8ee6" />
+<img width="2560" height="1070" alt="image" src="https://github.com/user-attachments/assets/e981d2ae-0c35-4a81-8bfe-e612dc8bffc2" />
 </p>
 <p>
-Once deployed, remote into both the Client-1 Virtual Machine and the Domain-Controller Virtual Machine using Remote Desktop Connection. Use the public IP address given to each respective Virtual Machine to sign in and use the administrator accounts made during the Azure setup to remote into each system. Once signed in to each system, open Powershell in each system to observe and verify network configurations in Azure are correct. On the Client-1 system, type in "ipconfig /all" to observe that the DNS points to the Domain Controller's static IP address, then type in "ping x.x.x.x" (replace x.x.x.x with the static private ip address of your domain controller) and observe that it pings the Domain-Controller's private IP address.
+Once deployed, remote into both the Client-1 Virtual Machine and the Domain-Controller Virtual Machine using Remote Desktop Connection. Use the public IP address given to each respective Virtual Machine to sign in and use the administrator accounts made during the Azure setup to remote into each system. Once signed in to each system, open Powershell in each system to observe and verify network configurations in Azure are correct. On the Client-1 system, type in "ipconfig /all" to observe that the DNS points to the Domain Controller's static IP address, then type in "ping x.x.x.x" (replace x.x.x.x with the static private ip address of your domain controller) and observe that it pings the Domain-Controller's private IP address. IMAGE NOTE: Client-1 is left image, Domain-Controller is right image.
 </p>
 <br />
 
