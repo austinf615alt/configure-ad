@@ -19,7 +19,7 @@ This project outlines the implementation of on-premises Active Directory within 
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1: Created and Configure Azure Infrastructure
+- Step 1: Created and Configured Azure Infrastructure
 - Step 2: Deployed Windows Server Virtual Machines
 - Step 3: Installed and Configured Active Directory Domain Services
 - Step 4: Created and Configured Administrative and Organizational Structure
