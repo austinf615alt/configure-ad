@@ -15,6 +15,7 @@ This project outlines the implementation of on-premises Active Directory within 
 
 <h2>Operating Systems Used </h2>
 
+- Windows 11 Pro version 25H2
 - Windows Server 2025 Datacenter X64 Gen2 
 
 <h2>High-Level Deployment and Configuration Steps</h2>
